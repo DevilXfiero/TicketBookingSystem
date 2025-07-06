@@ -1,5 +1,6 @@
 package com.devilxfiero.app.models;
 
+import java.util.List;
 import java.util.UUID;
 
 public class User {
@@ -12,7 +13,11 @@ public class User {
     this.username = username;
     this.email = email;
     this.password = UUID.randomUUID().toString();
-    this.username = username;
+
+  }
+
+  public Booking bookShow(Show show, List<String> seatIds) {
+    return show.bookTicket(seatIds);
   }
 
   public String getUsername() {
