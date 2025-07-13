@@ -8,7 +8,7 @@ public class Theatre {
   private List<Screen> screens;
   private List<Show> shows;
 
-  public Theatre(int theatreId, String address, List<Screen> screens, List<Show> shows) {
+  public Theatre(int theatreId, String address, List<Screen> screens, List<Show> shows) {  
     this.theatreId = theatreId;
     this.address = address;
     this.screens = screens;
